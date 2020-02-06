@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/bookapp/static/css/main.fb794f74.chunk.css",
-    "main.js": "/bookapp/static/js/main.d42f7f29.chunk.js",
-    "main.js.map": "/bookapp/static/js/main.d42f7f29.chunk.js.map",
+    "main.css": "/bookapp/static/css/main.9ec75ac4.chunk.css",
+    "main.js": "/bookapp/static/js/main.cfb337af.chunk.js",
+    "main.js.map": "/bookapp/static/js/main.cfb337af.chunk.js.map",
     "runtime-main.js": "/bookapp/static/js/runtime-main.c967bd4e.js",
     "runtime-main.js.map": "/bookapp/static/js/runtime-main.c967bd4e.js.map",
     "static/js/2.8478c029.chunk.js": "/bookapp/static/js/2.8478c029.chunk.js",
     "static/js/2.8478c029.chunk.js.map": "/bookapp/static/js/2.8478c029.chunk.js.map",
     "index.html": "/bookapp/index.html",
-    "precache-manifest.27af45d1d1b9c22a50e549636ee7c041.js": "/bookapp/precache-manifest.27af45d1d1b9c22a50e549636ee7c041.js",
+    "precache-manifest.cc8f8d3ecbe29f559b0098cf29a54841.js": "/bookapp/precache-manifest.cc8f8d3ecbe29f559b0098cf29a54841.js",
     "service-worker.js": "/bookapp/service-worker.js",
-    "static/css/main.fb794f74.chunk.css.map": "/bookapp/static/css/main.fb794f74.chunk.css.map",
+    "static/css/main.9ec75ac4.chunk.css.map": "/bookapp/static/css/main.9ec75ac4.chunk.css.map",
     "static/js/2.8478c029.chunk.js.LICENSE.txt": "/bookapp/static/js/2.8478c029.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c967bd4e.js",
     "static/js/2.8478c029.chunk.js",
-    "static/css/main.fb794f74.chunk.css",
-    "static/js/main.d42f7f29.chunk.js"
+    "static/css/main.9ec75ac4.chunk.css",
+    "static/js/main.cfb337af.chunk.js"
   ]
 }
