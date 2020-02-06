@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./App.css";
 import Book from "./Book";
 class App extends React.Component {
   state = {
@@ -9,9 +10,7 @@ class App extends React.Component {
   getBook = async () => {
     const {
       data: { item }
-    } = await axios.get(
-      "http://book.interpark.com/api/bestSeller.api?key=1673DA05EE3AEC5BA66552F95B7094CE659F33FA38195886D4B3315563E062A9&categoryId=100&output=json"
-    );
+    } = await axios.get("https://lhk3337.github.io/book_json/books.json");
     console.log(item);
     this.setState({ item, isLoading: false });
   };
@@ -30,7 +29,16 @@ class App extends React.Component {
         ) : (
           <div className="books">
             {item.map(book => (
-              <Book key={book.itemId} />
+              <Book
+                key={book.itemId}
+                rank={book.rank}
+                title={book.title}
+                priceStandard={book.priceStandard}
+                priceSales={book.priceSales}
+                image={book.coverLargeUrl}
+                summary={book.description}
+                buy={book.link}
+              />
             ))}
           </div>
         )}
