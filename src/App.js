@@ -9,8 +9,10 @@ class App extends React.Component {
   getBook = async () => {
     const {
       data: { item }
-    } = await axios.get("https://lhk3337.github.io/book_json/books.json");
-
+    } = await axios.get(
+      "http://book.interpark.com/api/bestSeller.api?key=1673DA05EE3AEC5BA66552F95B7094CE659F33FA38195886D4B3315563E062A9&categoryId=100&output=json"
+    );
+    console.log(item);
     this.setState({ item, isLoading: false });
   };
   componentDidMount() {
@@ -28,19 +30,7 @@ class App extends React.Component {
         ) : (
           <div className="books">
             {item.map(book => (
-              <Book
-                key={book.bestRank}
-                best={book.bestRank}
-                author={book.author}
-                year={book.pubDate}
-                price={book.priceStandard}
-                sale={book.priceSales}
-                buy={book.link}
-                title={book.title}
-                rating={book.customerReviewRank}
-                summary={book.description}
-                poster={book.cover}
-              />
+              <Book key={book.itemId} />
             ))}
           </div>
         )}
