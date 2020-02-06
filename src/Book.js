@@ -15,9 +15,10 @@ function Book({ rank, title, image, priceStandard, priceSales, summary, buy }) {
         <h4 className="book__price">정가 : {numberFormat(priceStandard)} 원</h4>
         <h4 className="book__sale">할인가 : {numberFormat(priceSales)} 원</h4>
         <p className="book__summary">{summary.slice(0, 150)}...</p>
-        <div className="book__link">
-          <a href={buy}>사러가기</a>
-        </div>
+
+        <a href={buy}>
+          <div className="book__link">사러가기</div>
+        </a>
       </div>
     </div>
   );
